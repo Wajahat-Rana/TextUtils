@@ -60,10 +60,8 @@ export default function TextBox(props) {
     
     const handleCopy = ()=>{
       if(text !== ''){
-        let copyText = document.getElementById("inputText")
-      copyText.select();
-      document.getSelection().removeAllRanges();
-      navigator.clipboard.writeText(copyText.value);
+      navigator.clipboard.writeText(text);
+      props.showAlert('success','Copied To clipboard!')
       }
       else{
         props.showAlert('warning','Please Enter Some Text First')
