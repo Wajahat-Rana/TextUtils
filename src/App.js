@@ -1,16 +1,16 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar.js'
 import TextBox from './components/textBox.js'
 import React,{useState} from 'react';
 import Alert from './components/alert.js'
 //Importing React Router Setup
-import {
-  BrowserRouter,Route,Routes
-} from "react-router-dom";
-import About from './components/About.js';
+// import {
+//   BrowserRouter,Route,Routes
+// } from "react-router-dom";
+// import About from './components/About.js';
 
-let heading = 'Welcome to my app';
+// let heading = 'Welcome to my app';
 
 function App() {
 
@@ -33,7 +33,7 @@ function App() {
     if(mode === 'light'){
       setMode('dark')
       setModeText('Light Mode')
-      document.body.style.backgroundColor = 'gray'
+      document.body.style.backgroundColor = 'grey'
       showAlert('success','Dark Mode Enabled.')
       document.title = 'TextUtils -Dark'
     }
